@@ -5,8 +5,3 @@
   align-items: center;
   justify-content: space-between;
 }
-
-.bad p {
-  padding: 20px;
-  border: 1px solid grey;
-}
