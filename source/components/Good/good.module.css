@@ -1,0 +1,12 @@
+.good {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.good p {
+  padding: 20px;
+  border: 1px solid grey;
+}
