@@ -1,30 +1,32 @@
+html,
+body {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
 body,
 .root {
   height: 100%;
-  background-color: black;
-  background-image: url('./assets/react.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding: 20px;
+  background-color: #111;
+  background-image: none;
+  font-family: sans-serif;
+  color: white;
   margin: 0;
 }
 
-h1 {
-  color: crimson;
-  font-size: 6rem;
-  font-weight: bold;
-  text-align: center;
-}
-
-.hello {
-  width: 256px;
-  height: 256px;
-}
-
-.title {
-  color: violet;
-  font-size: 4rem;
-  font-weight: bold;
-  text-align: center;
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #111;
+  border-radius: 5px;
+  margin: 0 auto;
 }
