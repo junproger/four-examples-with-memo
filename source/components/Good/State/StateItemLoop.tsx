@@ -7,7 +7,7 @@ export interface IStateItemLoop {
   summator: () => void;
 }
 
-const memoStateItemLoop: FC<IStateItemLoop> = ({ index, summator }) => {
+const StateItemLoopMemo: FC<IStateItemLoop> = ({ index, summator }) => {
   logging('StateItemLoop rendered');
   const [getValue, setValue] = useState('0');
   const clickHandle = (): void => {
@@ -21,4 +21,4 @@ const memoStateItemLoop: FC<IStateItemLoop> = ({ index, summator }) => {
   );
 };
 
-export const StateItemLoop = memo(memoStateItemLoop);
+export const StateItemLoop = memo(StateItemLoopMemo);

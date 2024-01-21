@@ -7,7 +7,7 @@ export interface IRefItemLoop {
   summator: () => void;
 }
 
-const memoRefItemLoop: FC<IRefItemLoop> = ({ index, summator }) => {
+const RefItemLoopMemo: FC<IRefItemLoop> = ({ index, summator }) => {
   logging('REFItemLoop rendered');
   const refButton = useRef<HTMLInputElement | null>(null);
   const clickHandle = (): void => {
@@ -24,4 +24,4 @@ const memoRefItemLoop: FC<IRefItemLoop> = ({ index, summator }) => {
   );
 };
 
-export const RefItemLoop = memo(memoRefItemLoop);
+export const RefItemLoop = memo(RefItemLoopMemo);

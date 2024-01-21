@@ -7,7 +7,7 @@ export interface IRefItemUnit {
   summator: () => void;
 }
 
-const memoRefItemUnit: FC<IRefItemUnit> = ({ index, summator }) => {
+const RefItemUnitMemo: FC<IRefItemUnit> = ({ index, summator }) => {
   logging('REFItemUnit rendered');
   const refButton = useRef<HTMLInputElement | null>(null);
   const clickHandle = (): void => {
@@ -24,4 +24,4 @@ const memoRefItemUnit: FC<IRefItemUnit> = ({ index, summator }) => {
   );
 };
 
-export const RefItemUnit = memo(memoRefItemUnit);
+export const RefItemUnit = memo(RefItemUnitMemo);

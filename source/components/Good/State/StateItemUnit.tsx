@@ -7,7 +7,7 @@ export interface IStateItemUnit {
   summator: () => void;
 }
 
-const memoStateItemUnit: FC<IStateItemUnit> = ({ index, summator }) => {
+const StateItemUnitMemo: FC<IStateItemUnit> = ({ index, summator }) => {
   logging('StateItemUnit rendered');
   const [getValue, setValue] = useState('0');
   const clickHandle = (): void => {
@@ -21,4 +21,4 @@ const memoStateItemUnit: FC<IStateItemUnit> = ({ index, summator }) => {
   );
 };
 
-export const StateItemUnit = memo(memoStateItemUnit);
+export const StateItemUnit = memo(StateItemUnitMemo);
